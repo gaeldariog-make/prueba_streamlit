@@ -19,7 +19,7 @@ add_selectbox = st.sidebar.selectbox(
     'selecciona opcion',
     ('Email', 'Home phone', 'Mobile phone')
 )
-add_selectbox
+
 # Add a slider to the sidebar:
 add_slider = st.sidebar.slider(
     'valores',
@@ -31,5 +31,6 @@ st.write(pd.DataFrame({
     'second column': [10, 20, 30, 40]
 
 }))
+
 
 
