@@ -34,11 +34,12 @@ if opcion=='si':
       ('1', '2', '3','4')
   )
   "escogiste", add_selectbox
-  pd.('add_selectbox')
+  pd.loc('add_selectbox')
 # Add a slider to the sidebar:
 add_slider = st.sidebar.slider(
     'valores',
     0.0, 100.0, (25.0, 75.0)
+
 
 
 
