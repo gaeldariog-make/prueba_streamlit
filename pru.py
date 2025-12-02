@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import time
 'iniciando...'
 
 # Add a placeholder
@@ -30,3 +31,4 @@ st.write(pd.DataFrame({
     'second column': [10, 20, 30, 40]
 
 }))
+
