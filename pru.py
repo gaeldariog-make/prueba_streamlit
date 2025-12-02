@@ -17,13 +17,13 @@ while i==1:
   
   "listo"
   i+=1
-
-st.write("mis datos:")
-st.write(pd.DataFrame({
+df=pd.DataFrame({
     'first column': [1, 2, 3, 4],
     'second column': [10, 20, 30, 40]
 
-}))
+})
+st.write("mis datos:")
+st.write(df)
 opcion = st.sidebar.selectbox(
     'quieres ingresar un request?',
     ('si', 'no')
@@ -34,11 +34,12 @@ if opcion=='si':
       ('1', '2', '3','4')
   )
   "escogiste", add_selectbox
-  pd.loc('add_selectbox')
+  df.loc(add_selectbox)
 # Add a slider to the sidebar:
 add_slider = st.sidebar.slider(
     'valores',
     0.0, 100.0, (25.0, 75.0))
+
 
 
 
