@@ -17,7 +17,7 @@ while i=1:
   
   "listo"
   i+=1
-)
+
 st.write("mis datos:")
 st.write(pd.DataFrame({
     'first column': [1, 2, 3, 4],
@@ -39,6 +39,7 @@ if opcion=='si':
 add_slider = st.sidebar.slider(
     'valores',
     0.0, 100.0, (25.0, 75.0)
+
 
 
 
