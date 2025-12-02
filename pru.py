@@ -38,7 +38,8 @@ if opcion=='si':
 # Add a slider to the sidebar:
 add_slider = st.sidebar.slider(
     'valores',
-    0.0, 100.0, (25.0, 75.0)
+    0.0, 100.0, (25.0, 75.0))
+
 
 
 
