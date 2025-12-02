@@ -13,7 +13,7 @@ while i==1:
     # Update the progress bar with each iteration.
     latest_iteration.text(f'Iteracion {i+1}')
     bar.progress(i + 1)
-    time.sleep(0.1)
+    time.sleep(0.05)
   
   "listo"
   i+=1
@@ -31,14 +31,18 @@ opcion = st.sidebar.selectbox(
 if opcion=='si':
   add_selectbox = st.sidebar.selectbox(
       'selecciona opcion',
-      ('1', '2', '3','4')
+      ('1', '2')
   )
   "escogiste", add_selectbox
-  df.loc(add_selectbox)
+  if add_selectbox=='1':
+    df['first column']
+  if add_selectbox=='2':
+    df['second column']
 # Add a slider to the sidebar:
-add_slider = st.sidebar.slider(
-    'valores',
-    0.0, 100.0, (25.0, 75.0))
+#add_slider = st.sidebar.slider(
+#    'valores',
+#    0.0, 100.0, (25.0, 75.0))
+
 
 
 
