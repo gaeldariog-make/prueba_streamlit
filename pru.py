@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import time
 i=1
-while i=1:
+while i==1:
   'iniciando...'
   
   # Add a placeholder
@@ -39,6 +39,7 @@ if opcion=='si':
 add_slider = st.sidebar.slider(
     'valores',
     0.0, 100.0, (25.0, 75.0)
+
 
 
 
